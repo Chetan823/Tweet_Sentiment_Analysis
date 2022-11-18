@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <center>
+	  <h1>Sentiment Analysis Result : </h1>
+    <table border="5">
+      {% for  value in result %}
+        <tr>
+          <th> {{value["text"]}} </th>
+          <td> {{value["sentiment"]}} </td>
+       </tr>
+      {% endfor %}
+    </table>
+    <br/>
+    <form action="/">
+      <input type="submit" class="btn" value=" HOME "/>
+    </form>
+  </center>
+  </body>
+</html>
